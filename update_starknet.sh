@@ -18,7 +18,7 @@ function colors {
 function install_stark {
   cd ~/pathfinder
   git fetch
-  git checkout v0.1.10-alpha
+  git checkout v0.1.11-alpha
   cargo build --release --bin pathfinder
   mv ~/pathfinder/target/release/pathfinder /usr/local/bin/
   cd py
