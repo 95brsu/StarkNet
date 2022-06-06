@@ -8,7 +8,7 @@ echo " :+:+:+  +:+ +:+    +:+     +:+     +:+         ";
 echo " +#+ +:+ +#+ +#+    +:+     +:+     +#++:++#++  ";
 echo " +#+  +#+#+# +#+    +#+     +#+             +#+ ";
 echo " #+#   #+#+# #+#    #+#     #+#     #+#     #+# ";
-echo " ###    ####  ########    ######    ########    ";
+echo " ###    ####  ########      ###      ########   ";
 echo -e "\e[0m"
 echo "=================================================="
 
@@ -16,7 +16,7 @@ sleep 2
 
 
 function line {
-  echo "----02.06.2022--------------------------------------------------------------------"
+  echo "----06.06.2022--------------------------------------------------------------------"
 }
 
 function colors {
@@ -29,7 +29,7 @@ function colors {
 function install_stark {
   cd ~/pathfinder
   git fetch
-  git checkout v0.1.11-alpha
+  git checkout v0.2.0-alpha
   cargo build --release --bin pathfinder
   mv ~/pathfinder/target/release/pathfinder /usr/local/bin/
   cd py
