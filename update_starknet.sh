@@ -27,14 +27,14 @@ function colors {
 
 
 function install_stark {
-  cd ~/pathfinder
-  git fetch
-  git checkout v0.2.0-alpha
-  cargo build --release --bin pathfinder
-  mv ~/pathfinder/target/release/pathfinder /usr/local/bin/
-  cd py
-  source .venv/bin/activate
-  PIP_REQUIRE_VIRTUALENV=true pip install -r requirements-dev.txt
+cd ~/pathfinder
+git fetch
+git checkout v0.2.0-alpha
+cargo build --release --bin pathfinder
+mv ~/pathfinder/target/release/pathfinder /usr/local/bin/
+cd py
+source .venv/bin/activate
+PIP_REQUIRE_VIRTUALENV=true pip install -r requirements-dev.txt
   }
 
 
