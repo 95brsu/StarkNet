@@ -68,8 +68,6 @@ function tendermint {
 colors
 
 line
-logo
-line
 echo -e "${RED}Начинаем обновление StarkNet ${NORMAL}"
 line
 install_stark
