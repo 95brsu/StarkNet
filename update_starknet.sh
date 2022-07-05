@@ -16,7 +16,7 @@ sleep 2
 
 
 function line {
-  echo "----23.06.2022--------------------------------------------------------------------"
+  echo "----05.07.2022--------------------------------------------------------------------"
 }
 
 function colors {
@@ -29,7 +29,7 @@ function colors {
 function update_stark {
 cd ~/pathfinder
 git fetch
-git checkout v0.2.3-alpha
+git checkout v0.2.4-alpha
 cargo build --release --bin pathfinder
 mv ~/pathfinder/target/release/pathfinder /usr/local/bin/
 cd py
